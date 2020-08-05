@@ -1,0 +1,149 @@
+.layout-columns {
+  box-shadow: 0 0 0 1px #ccc;
+  overflow-x: auto;
+  overflow-y: hidden; }
+
+.layout-column {
+  margin: 0;
+  padding: 0; }
+  .layout-column + .layout-column {
+    border-left: solid #ccc thin; }
+  .layout-column--placeholder {
+    display: none; }
+  .layout-column .active-item {
+    background-color: #f7f8f9; }
+  .layout-column .list-group-item {
+    border-left: none;
+    border-right: none; }
+    .layout-column .list-group-item:first-child {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-top-width: 0; }
+  .layout-column .quick-action-menu {
+    position: static; }
+  @media (min-width: 768px) {
+    .layout-column {
+      height: calc(100vh - 384px);
+      min-height: 10rem;
+      overflow-y: scroll; }
+      .layout-column--placeholder {
+        display: block;
+        opacity: 0.5; } }
+
+.layout-column .list-group-item.layout-column-item-drag-top:first-child {
+  box-shadow: inset 0 2px 0 0 #0b5fff;
+  transition-delay: 0s; }
+
+.layout-column-item-dragged {
+  opacity: 0.4; }
+
+.layout-column-item-drag-inside {
+  box-shadow: inset 0 0 0 2px #0b5fff; }
+
+.layout-column-item-subtitle {
+  font-weight: normal; }
+  .layout-column-item-subtitle .label {
+    vertical-align: text-top; }
+
+.layout-drag-handler {
+  align-items: center;
+  color: #cdced9;
+  cursor: move;
+  display: inline-flex;
+  position: relative;
+  top: 1px; }
+  .layout-drag-handler svg {
+    height: 24px;
+    width: 24px; }
+
+.layout-has-child-col {
+  align-items: center;
+  color: #cdced9;
+  display: inline-flex;
+  min-width: 16px; }
+
+.list-group-item.layout-item {
+  height: 68px;
+  max-height: 68px;
+  position: relative;
+  transition: box-shadow 0s ease-out 32ms; }
+  .list-group-item.layout-item .layout-column-item-title {
+    pointer-events: none; }
+    .list-group-item.layout-item .layout-column-item-title .badge {
+      vertical-align: bottom; }
+  .list-group-item.layout-item .layout-column-item-click-mask {
+    background: transparent;
+    border: none;
+    box-shadow: inset 0 0 0 0 #fff, inset 0 0 0 0 #80acff;
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: box-shadow 150ms ease-in-out;
+    width: 100%;
+    will-change: box-shadow; }
+    .list-group-item.layout-item .layout-column-item-click-mask:focus {
+      box-shadow: inset 0 0 0 0.125rem #fff, inset 0 0 0 0.25rem #80acff;
+      outline: 0; }
+
+.list-group-item.layout-item:last-child {
+  border-radius: 0; }
+
+.list-group-item.layout-item.layout-column-item-drag-bottom {
+  box-shadow: inset 0 -2px 0 0 #0b5fff;
+  transition-delay: 0s; }
+
+.list-group-item.layout-item.layout-column-item-drag-top {
+  box-shadow: 0 -2px 0 0 #0b5fff;
+  transition-delay: 0s; }
+
+.list-group-item.layout-drag-item.dragging {
+  background-color: #f0f5ff;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 2px 3px 6px 0 rgba(39, 40, 51, 0.15);
+  height: 48px;
+  width: 240px; }
+  .list-group-item.layout-drag-item.dragging .flex-col .btn-link,
+  .list-group-item.layout-drag-item.dragging .flex-col .component-action,
+  .list-group-item.layout-drag-item.dragging .flex-col .custom-checkbox,
+  .list-group-item.layout-drag-item.dragging .flex-col .dropdown,
+  .list-group-item.layout-drag-item.dragging .flex-col .list-group-subtitle,
+  .list-group-item.layout-drag-item.dragging .flex-col .quick-action-menu {
+    display: none; }
+  .list-group-item.layout-drag-item.dragging .flex-col .list-group-title {
+    margin-top: 0; }
+
+.select-item-checkbox-label:after, .select-item-checkbox-label:before {
+  top: 0; }
+
+.portlet-layouts-admin .customization-settings #main-content .portlet-column {
+  border: 1px solid #0b5fff;
+  padding: 0 10px;
+  text-align: center; }
+
+.portlet-layouts-admin .customization-settings #main-content .portlet-layout {
+  margin-bottom: 0; }
+
+.portlet-layouts-admin .customization-settings #main-content .row:nth-child(2n-1) .portlet-column:nth-child(2n-1),
+.portlet-layouts-admin .customization-settings #main-content .row:nth-child(2n) .portlet-column:nth-child(2n) {
+  background-color: #e5f5fc; }
+
+.portlet-layouts-admin .dialog-footer {
+  position: fixed; }
+
+.portlet-layouts-admin .friendly-url .input-group-item-shrink {
+  max-width: 50%; }
+
+.portlet-layouts-admin .layout-type-img {
+  width: 100%; }
+
+.portlet-layouts-admin .searchcontainer-content .breadcrumb {
+  margin-bottom: 0;
+  padding: 0; }
+
+.portlet-layouts-admin .card-img-align-top img {
+  top: 0;
+  transform: translate(-50%, 0);
+  width: 100%; }

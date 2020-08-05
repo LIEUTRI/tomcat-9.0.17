@@ -1,0 +1,11 @@
+.portlet-search-bar .alert {
+  margin-bottom: 0; }
+
+.portlet-search-bar .search-bar .form-group.input-group-item {
+  margin-bottom: 0; }
+
+.portlet-search-bar .search-bar-keywords-input-wrapper {
+  min-width: 6.25rem; }
+
+.portlet-search-bar .search-bar-search-select-wrapper {
+  max-width: 9.375rem; }
